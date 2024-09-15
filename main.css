@@ -29,7 +29,7 @@ body {
   padding: 20px;
   margin: 20px;
   width: 250px;                    /* Set width of the box */
-  height: 400px;                   /* Set height of the box */
+  height: 350px;                   /* Set height of the box */
   color: #ffffff;                  /* White text inside */
   display: flex;
   flex-direction: column;
