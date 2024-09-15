@@ -23,12 +23,12 @@ body {
 /* Rounded square style */
 .rounded-square {
   background-color: #000000;       /* Black background for the square */
-  border-radius: 25px;             /* Rounded corners */
+  border-radius: 15px;             /* Rounded corners */
   border: 2px solid #000000;       /* Black border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
   padding: 20px;
-  margin: 20px 0;
-  width: 400px;                    /* Adjust width to fit content */
+  margin: 20px;
+  width: 300px;                    /* Adjust width to make it smaller */
   height: 500px;                   /* Adjust height to fit content */
   color: #ffffff;                  /* White text inside */
   display: flex;
@@ -67,18 +67,20 @@ h1, p {
 .icon-link {
   color: #ffffff; /* White color for icons */
   text-decoration: none;
-  font-size: 48px; /* Larger icon size */
-}
-
-.icon-link i {
-  margin-right: 0; /* No extra space between icon and text (text removed) */
+  font-size: 36px; /* Adjust icon size as needed */
 }
 
 /* Spotify Embed Container */
 .spotify-container {
-  width: 400px;                   /* Match Spotify embed width */
-  height: 152px;                  /* Match Spotify embed height */
+  width: 100%;                   /* Make container full width of the box */
+  max-width: 300px;              /* Ensure max width fits within the box */
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+iframe {
+  width: 100%;                   /* Make iframe full width of its container */
+  height: 152px;                 /* Fixed height to match Spotify embed */
+  border-radius: 12px;           /* Rounded corners for iframe */
 }
