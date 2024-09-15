@@ -58,28 +58,10 @@ h1, p {
 
 /* Social Links Styles */
 .social-links {
-  margin: 20px 0;
   display: flex; /* Display links in a row */
-  justify-content: center; /* Center links horizontally */
+  gap: 20px; /* Space between icons */
+  margin: 20px 0;
 }
 
 .icon-link {
-  color: #ffffff; /* White color for icons */
-  text-decoration: none;
-  margin: 0 15px; /* Space between icons */
-  font-size: 24px; /* Adjust icon size */
-}
-
-.icon-link i {
-  margin-right: 0; /* No extra space between icon and text (text removed) */
-}
-
-/* Spotify Embed Container */
-.spotify-container {
-  width: 400px;                   /* Match Spotify embed width */
-  height: 152px;                  /* Match Spotify embed height */
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
+  color: #
