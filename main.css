@@ -52,16 +52,31 @@ body {
 }
 
 /* General Text Styles */
-h1, p, a {
+h1, p {
   color: #ffffff; /* White text color inside the black box */
 }
 
-/* Link styles */
-a {
-  display: block;
-  margin: 10px 0;
+/* Social Links Styles */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: #ffffff; /* White text color for links */
   text-decoration: none;
-  color: #ffffff; /* White text for links inside the black box */
+  margin: 0 15px; /* Space between links */
+  font-size: 16px; /* Adjust font size */
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+.social-links i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #ffffff;    /* White color for icons */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* Spotify Embed Container */
