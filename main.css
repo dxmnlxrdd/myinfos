@@ -28,8 +28,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
   padding: 20px;
   margin: 20px;
-  width: 250px;                    /* Adjust width to make it smaller */
-  height: 400px;                   /* Adjust height to make it smaller */
+  width: 300px;                    /* Adjust width to make it smaller */
+  height: 350px;                   /* Adjust height to make it smaller */
   color: #ffffff;                  /* White text inside */
   display: flex;
   flex-direction: column;
