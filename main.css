@@ -20,13 +20,17 @@ body {
 
 /* Rounded square style */
 .rounded-square {
-  background-color: #ffffff;
-  border-radius: 25px;  /* Adjust for roundness */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for a modern look */
+  background-color: #ffffff;       /* White background for visibility */
+  border-radius: 25px;             /* Rounded corners */
+  border: 2px solid #333333;       /* Dark border to create a clear square box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
   padding: 20px;
   margin: 20px 0;
-  width: 100%;
-  max-width: 400px;  /* Adjust width to control size */
+  width: 300px;                    /* Make it a square by fixing the width */
+  height: 300px;                   /* Fixed height to match the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Link styles */
