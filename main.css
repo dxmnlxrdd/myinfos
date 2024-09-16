@@ -7,9 +7,21 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; /* Light gray background for contrast */
+  background-color: #f0f0f0; /* Light gray background as fallback */
 }
 
+/* Video background styling */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Make sure video stays in the background */
+  object-fit: cover; /* Ensure the video covers the entire background */
+}
+
+/* Container */
 .container {
   display: flex;
   justify-content: center;
@@ -22,32 +34,32 @@ body {
 
 /* Rounded square style */
 .rounded-square {
-  background-color: #000000;       /* Black background for the square */
-  border-radius: 25px;             /* Rounded corners */
-  border: 2px solid #000000;       /* Black border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.7); /* 30% transparent black background */
+  border-radius: 25px;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px 0;
-  width: 500px;                    /* Adjust width to fit content */
-  height: 600px;                   /* Adjust height to fit content */
-  color: #ffffff;                  /* White text inside */
+  width: 500px; /* Adjust width */
+  height: 600px; /* Adjust height */
+  color: #ffffff; /* White text inside */
   display: flex;
   flex-direction: column;
-  align-items: center;            /* Center content horizontally */
-  justify-content: center;        /* Center content vertically */
-  opacity: 0;                     /* Start as invisible */
-  animation: fadeIn 1.5s ease-out forwards; /* Apply fade-in animation */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation */
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);  /* Start slightly below */
+    transform: translateY(20px); /* Start slightly below */
   }
   to {
     opacity: 1;
-    transform: translateY(0);     /* End at original position */
+    transform: translateY(0); /* End at original position */
   }
 }
 
@@ -76,8 +88,8 @@ h1, p {
 
 /* Spotify Embed Container */
 .spotify-container {
-  width: 400px;                   /* Match Spotify embed width */
-  height: 152px;                  /* Match Spotify embed height */
+  width: 400px; /* Match Spotify embed width */
+  height: 152px; /* Match Spotify embed height */
   margin-top: 20px;
   display: flex;
   justify-content: center;
