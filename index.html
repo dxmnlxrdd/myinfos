@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MyfjfjdjfBio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bio</title>
   <link rel="stylesheet" href="main.css">
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="video-here.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
   <div class="container">
     <!-- Rounded Square Box -->
     <div class="rounded-square">
@@ -23,12 +31,10 @@
 
       <!-- Spotify Embed -->
       <div class="spotify-container">
-        <iframe 
-          style="border-radius: 12px;" 
+        <iframe style="border-radius: 12px;" 
           src="https://open.spotify.com/embed/track/0Vwq1DldvSmyRs8Qi4br1Q?utm_source=generator" 
-          width="400" height="152" frameBorder="0" allowfullscreen="" 
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-          loading="lazy">
+          width="400" height="152" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
         </iframe>
       </div>
     </div>
