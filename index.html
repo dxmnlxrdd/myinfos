@@ -18,7 +18,7 @@
   <div class="container">
     <!-- Rounded Square Box -->
     <div class="rounded-square">
-      <h1>C</h1>
+      <h1 id="typewriter"></h1> <!-- Placeholder for the typewriter text -->
       <p>All my infos below here</p>
 
       <!-- Social Media Links with Icons Only -->
@@ -39,5 +39,24 @@
       </div>
     </div>
   </div>
+
+  <!-- Typewriter effect script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const text = 'dxmnlxrd'; // The text to display
+      const typewriterElement = document.getElementById('typewriter');
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typewriterElement.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 200); // Speed of typing (200ms)
+        }
+      }
+
+      typeWriter(); // Call the function
+    });
+  </script>
 </body>
 </html>
