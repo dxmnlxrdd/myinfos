@@ -13,11 +13,12 @@ body {
 /* Video background styling */
 #bg-video {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   min-width: 100%; 
   min-height: 100%;
-  z-index: -1; /* Make sure video stays in the background */
+  transform: translate(-50%, -50%); /* Center the video */
+  z-index: -1; /* Ensure the video stays in the background */
   object-fit: cover; /* Ensure the video covers the entire background */
 }
 
