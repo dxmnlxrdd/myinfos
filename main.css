@@ -15,11 +15,11 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  min-width: 100%; 
-  min-height: 100%;
-  transform: translate(-50%, -50%); /* Center the video */
-  z-index: -1; /* Ensure the video stays in the background */
-  object-fit: cover; /* Ensure the video covers the entire background */
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  object-fit: cover; /* Ensures video covers entire screen while maintaining aspect ratio */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Keep it in the background */
 }
 
 /* Container */
